@@ -1,0 +1,47 @@
+[2024-05-14 16:23:49][INFO]다음 정보 신상품 정보 수집까지 0.5분 대기합니다.
+[2024-05-14 16:24:21][DEBUG]Driver created with proxy(124.175.161.156:11089)
+[2024-05-14 16:24:21][INFO]카카오 선물하기 크롤링을 시작합니다!
+[2024-05-14 16:24:21][INFO]카카오 선물하기의 stanley 브랜드 크롤링을 시작합니다!
+[2024-05-14 16:24:28][DEBUG]Get *https://gift.kakao.com/brand/10941* page
+[2024-05-14 16:24:28][INFO]Kakao_stanley : 총 0개의 신상품을 발견 하였습니다.
+[2024-05-14 16:24:28][INFO]Kakao_stanley : 총 0개의 재고 확인 상품을 발견 하였습니다.
+[2024-05-14 16:24:28][INFO]카카오 선물하기의 SF 브랜드 크롤링을 시작합니다!
+[2024-05-14 16:24:29][DEBUG]Get *https://gift.kakao.com/brand/2184?display=basic* page
+[2024-05-14 16:24:30][INFO]Kakao_SF : 총 0개의 신상품을 발견 하였습니다.
+[2024-05-14 16:24:30][INFO]Kakao_SF : 총 0개의 재고 확인 상품을 발견 하였습니다.
+[2024-05-14 16:24:30][INFO]SSF 크롤링을 시작합니다!
+[2024-05-14 16:24:30][INFO]SSF의 shoes 브랜드 크롤링을 시작합니다!
+[2024-05-14 16:24:48][DEBUG]Get *https://www.ssfshop.com/10-Corso-Como/SHOES/list?dspCtgryNo=SFMA42A23&brandShopNo=BDMA23&brndShopId=CCPB* page
+[2024-05-14 16:24:48][DEBUG]SSF : Total 2 of pages 
+[2024-05-14 16:24:53][DEBUG]Get *https://www.ssfshop.com/10-Corso-Como/SHOES/list?dspCtgryNo=SFMA42A23&brandShopNo=BDMA23&brndShopId=CCPB&currentPage=1* page
+[2024-05-14 16:24:53][INFO]SSF_shoes: 총 0개의 신상품을 발견 하였습니다.
+[2024-05-14 16:24:53][INFO]SFF_shoes : 총 0개의 재고 확인 상품을 발견 하였습니다.
+[2024-05-14 16:24:53][INFO]SSF의 shirts 브랜드 크롤링을 시작합니다!
+[2024-05-14 16:25:02][DEBUG]Get *https://www.ssfshop.com/10-Corso-Como/ssfshop/list?dspCtgryNo=SFMA42A20A01&brandShopNo=BDMA23&brndShopId=CCPB* page
+[2024-05-14 16:25:02][DEBUG]SSF : Total 1 of pages 
+[2024-05-14 16:25:04][DEBUG]Get *https://www.ssfshop.com/10-Corso-Como/ssfshop/list?dspCtgryNo=SFMA42A20A01&brandShopNo=BDMA23&brndShopId=CCPB&currentPage=1* page
+[2024-05-14 16:25:34][ERROR]다음과 같은 오류로 프로그램을 종료합니다. : Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="dspGood"]"}
+  (Session info: chrome=124.0.6367.202); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6E2061522+60802]
+	(No symbol) [0x00007FF6E1FDAC22]
+	(No symbol) [0x00007FF6E1E97CE4]
+	(No symbol) [0x00007FF6E1EE6D4D]
+	(No symbol) [0x00007FF6E1EE6E1C]
+	(No symbol) [0x00007FF6E1F2CE37]
+	(No symbol) [0x00007FF6E1F0ABBF]
+	(No symbol) [0x00007FF6E1F2A224]
+	(No symbol) [0x00007FF6E1F0A923]
+	(No symbol) [0x00007FF6E1ED8FEC]
+	(No symbol) [0x00007FF6E1ED9C21]
+	GetHandleVerifier [0x00007FF6E23641BD+3217949]
+	GetHandleVerifier [0x00007FF6E23A6157+3488183]
+	GetHandleVerifier [0x00007FF6E239F0DF+3459391]
+	GetHandleVerifier [0x00007FF6E211B8E6+823622]
+	(No symbol) [0x00007FF6E1FE5FBF]
+	(No symbol) [0x00007FF6E1FE0EE4]
+	(No symbol) [0x00007FF6E1FE1072]
+	(No symbol) [0x00007FF6E1FD18C4]
+	BaseThreadInitThunk [0x00007FFAC324257D+29]
+	RtlUserThreadStart [0x00007FFAC4BAAA48+40]
+
