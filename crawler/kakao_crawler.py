@@ -121,6 +121,8 @@ class KakaoCrawler:
         items = []
         driver = driver_obj.driver
         
+        driver.maximize_window()
+        
         driver_obj.get_page(url)
         #스크롤 내리기 전 위치
         scroll_location = driver.execute_script("return document.body.scrollHeight")
@@ -150,13 +152,14 @@ class KakaoCrawler:
 
             #늘어난 스크롤 위치와 이동 전 위치 같으면(더 이상 스크롤이 늘어나지 않으면) 종료
             if scroll_location == scroll_height:
+                driver.minimize_window()
                 break
 
             #같지 않으면 스크롤 위치 값을 수정하여 같아질 때까지 반복
             else:
                 #스크롤 위치값을 수정
                 scroll_location = driver.execute_script("return document.body.scrollHeight")
-        
+        driver.minimize_window()
         return items
     
     def get_item_detail_info(self, driver_obj: web_driver_manager.Driver, item_url):
