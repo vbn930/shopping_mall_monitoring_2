@@ -81,6 +81,24 @@ class SSFCrawler:
         
         return latest_item_url
     
+    def options_to_list(self, options: list):
+        option_list = []
+        for option in options:
+            val = []
+            val.append(option.size)
+            val.append(option.is_soldout)
+            option_list.append(val)
+        
+        return option_list
+
+    def list_to_options(self, option_list: list):
+        options = []
+        for option in option_list:
+            val = Option(option[0], option[1])
+            options.append(val)
+
+        return options
+    
     def add_items_to_restock_check_list(self, brand):
         json_path = "./config/ssf/restock_check_list.json"
         with open(json_path, encoding='UTF-8') as file:
@@ -89,7 +107,7 @@ class SSFCrawler:
         restock_check_list = data[brand]
 
         for item in self.items:
-            restock_check_list.append([item.name, item.brand, item.img_url, item.url, item.id, False])
+            restock_check_list.append([item.name, item.brand, item.img_url, item.url, item.id, False,  self.options_to_list(item.options)])
             
         data[brand] = restock_check_list
 
@@ -106,7 +124,7 @@ class SSFCrawler:
         
         for item in restock_check_list:
             if item[5] == True:
-                restock_item = SSFItem(name=item[0], brand=item[1], price="", discount="", img_url=item[2], url=item[3], id=item[4], options=[])
+                restock_item = SSFItem(name=item[0], brand=item[1], price="", discount="", img_url=item[2], url=item[3], id=item[4], options=self.list_to_options(item[6]))
                 restock_list.append(restock_item)
                 
         return restock_list
@@ -235,12 +253,16 @@ class SSFCrawler:
         restock_item_list = self.get_restock_check_items(brand)
         self.logger.log_info(f"SFF_{brand} : 총 {len(restock_item_list)}개의 재고 확인 상품을 발견 하였습니다.")
         for restock_item in restock_item_list:
+            prev_option = restock_item.options
             item = self.get_item_detail_info(driver_obj, url=restock_item.url, ssf_item=restock_item)
             driver_obj.driver.back()
-            self.logger.log_info(f"재고 확인 상품 {restock_item.name}의 정보 수집을 완료하였습니다.")
-            self.items.append(item)
-            self.add_item_to_database(item)
-            self.send_discord_web_hook(driver_manager, item, webhook_url)
+            if prev_option != item.options:
+                self.logger.log_info(f"재고 확인 상품 {restock_item.name}의 정보 수집을 완료하였습니다.")
+                self.items.append(item)
+                self.add_item_to_database(item)
+                self.send_discord_web_hook(driver_manager, item, webhook_url)
+            else:
+                self.logger.log_info(f"재고 확인 상품 {restock_item.name}의 정보 변경 사항이 없습니다.")
         
     def save_db_data_as_excel(self, save_path, file_name):
         data_frame = pd.DataFrame(self.database)

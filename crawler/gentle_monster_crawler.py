@@ -86,7 +86,7 @@ class GentleMonsterCrawler:
         
         restock_check_list = data[brand]
         for item in self.items:
-            restock_check_list.append([item.name, item.img_url, item.url, False])
+            restock_check_list.append([item.name, item.img_url, item.url, False, item.discount])
             
         data[brand] = restock_check_list
         
@@ -103,7 +103,7 @@ class GentleMonsterCrawler:
         
         for item in restock_check_list:
             if item[3] == True:
-                restock_item = GentleMonsterItem(name=item[0], price="", discount="", img_url=item[1], url=item[2], options=[])
+                restock_item = GentleMonsterItem(name=item[0], price="", discount=item[4], img_url=item[1], url=item[2], options=[])
                 restock_list.append(restock_item)
                 
         return restock_list
@@ -206,15 +206,17 @@ class GentleMonsterCrawler:
         self.logger.log_info(f"Gentle Monster_{brand} : 총 {len(restock_item_list)}개의 재고 확인 상품을 발견 하였습니다.")
         for restock_item in restock_item_list:
             item_option, item_price, item_discount, item_img_url = self.get_item_detail_info(driver_obj, restock_item.url)
-            restock_item.options = item_option
-            restock_item.price = item_price
-            restock_item.img_url = item_img_url
-            restock_item.discount = item_discount
-            self.logger.log_info(f"재고 확인 상품 {restock_item.name}의 정보 수집을 완료하였습니다.")
-            self.add_item_to_database(restock_item)
-            self.send_discord_web_hook(driver_manager, restock_item, webhook_url)
-            
-        self.items += restock_item_list
+            if restock_item.options != item_option:
+                restock_item.options = item_option
+                restock_item.price = item_price
+                restock_item.img_url = item_img_url
+                restock_item.discount = item_discount
+                self.logger.log_info(f"재고 확인 상품 {restock_item.name}의 정보 수집을 완료하였습니다.")
+                self.items.append(restock_item)
+                self.add_item_to_database(restock_item)
+                self.send_discord_web_hook(driver_manager, restock_item, webhook_url)
+            else:
+                self.logger.log_info(f"재고 확인 상품 {restock_item.name}의 정보 변경 사항이 없습니다.")
         
     def save_db_data_as_excel(self, save_path, file_name):
         data_frame = pd.DataFrame(self.database)

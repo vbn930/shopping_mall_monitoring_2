@@ -1,88 +1,33 @@
-[2024-05-14 03:12:15][INFO]다음 정보 신상품 정보 수집까지 0.5분 대기합니다.
-[2024-05-14 03:12:47][DEBUG]Driver created with proxy(124.175.161.154:11089)
-[2024-05-14 03:12:47][INFO]카카오 선물하기 크롤링을 시작합니다!
-[2024-05-14 03:12:47][INFO]카카오 선물하기의 stanley 브랜드 크롤링을 시작합니다!
-[2024-05-14 03:13:03][DEBUG]Get *https://gift.kakao.com/brand/10941* page
-[2024-05-14 03:13:03][INFO]Kakao_stanley : 총 0개의 신상품을 발견 하였습니다.
-[2024-05-14 03:13:03][INFO]Kakao_stanley : 총 0개의 재고 확인 상품을 발견 하였습니다.
-[2024-05-14 03:13:03][INFO]카카오 선물하기의 SF 브랜드 크롤링을 시작합니다!
-[2024-05-14 03:13:05][DEBUG]Get *https://gift.kakao.com/brand/2184?display=basic* page
-[2024-05-14 03:13:09][INFO]Kakao_SF : 총 0개의 신상품을 발견 하였습니다.
-[2024-05-14 03:13:09][INFO]Kakao_SF : 총 3개의 재고 확인 상품을 발견 하였습니다.
-[2024-05-14 03:13:10][DEBUG]Get *https://gift.kakao.com/product/1036615* page
-[2024-05-14 03:13:17][INFO]재고 확인 상품 밀크앤허니 프리미엄 호두파이의 정보 수집을 완료하였습니다.
-[2024-05-14 03:13:17][DEBUG]Image 'https://img1.kakaocdn.net/thumb/C320x320@2x.fwebp.q82/?fname=https%3A%2F%2Fst.kakaocdn.net%2Fproduct%2Fgift%2Fproduct%2F20240220113520_f00a8934fb72413199126f1fb8c96250.jpg' download completed
-[2024-05-14 03:13:20][DEBUG]Get *https://gift.kakao.com/product/1065037* page
-[2024-05-14 03:13:35][INFO]재고 확인 상품 호두 듬뿍 고소하고 달지 않은 밀크앤허니 호두타르트의 정보 수집을 완료하였습니다.
-[2024-05-14 03:13:35][DEBUG]Image 'https://img1.kakaocdn.net/thumb/C320x320@2x.fwebp.q82/?fname=https%3A%2F%2Fst.kakaocdn.net%2Fproduct%2Fgift%2Fproduct%2F20230907124209_9454bb64d22549ceb35946ed7a7d8ca7.jpg' download failed
-[2024-05-14 03:13:35][DEBUG]Image 'https://img1.kakaocdn.net/thumb/C320x320@2x.fwebp.q82/?fname=https%3A%2F%2Fst.kakaocdn.net%2Fproduct%2Fgift%2Fproduct%2F20230907124209_9454bb64d22549ceb35946ed7a7d8ca7.jpg' download failed
-[2024-05-14 03:13:35][DEBUG]Image 'https://img1.kakaocdn.net/thumb/C320x320@2x.fwebp.q82/?fname=https%3A%2F%2Fst.kakaocdn.net%2Fproduct%2Fgift%2Fproduct%2F20230907124209_9454bb64d22549ceb35946ed7a7d8ca7.jpg' download failed
-[2024-05-14 03:13:36][DEBUG]Image 'https://img1.kakaocdn.net/thumb/C320x320@2x.fwebp.q82/?fname=https%3A%2F%2Fst.kakaocdn.net%2Fproduct%2Fgift%2Fproduct%2F20230907124209_9454bb64d22549ceb35946ed7a7d8ca7.jpg' download failed
-[2024-05-14 03:13:36][DEBUG]Image 'https://img1.kakaocdn.net/thumb/C320x320@2x.fwebp.q82/?fname=https%3A%2F%2Fst.kakaocdn.net%2Fproduct%2Fgift%2Fproduct%2F20230907124209_9454bb64d22549ceb35946ed7a7d8ca7.jpg' download failed
-[2024-05-14 03:13:36][DEBUG]Image 'https://img1.kakaocdn.net/thumb/C320x320@2x.fwebp.q82/?fname=https%3A%2F%2Fst.kakaocdn.net%2Fproduct%2Fgift%2Fproduct%2F20230907124209_9454bb64d22549ceb35946ed7a7d8ca7.jpg' download failed
-[2024-05-14 03:13:36][DEBUG]Img size is under 50KB or cannot download image 'thumbnail'
-[2024-05-14 03:13:39][DEBUG]Get *https://gift.kakao.com/product/8055098* page
-[2024-05-14 03:13:54][INFO]재고 확인 상품 "신세계백화점 입점" 호텔컬렉션 한우국탕 5종 선물세트(고기곰탕2종+소고기무국+육개장+미역국)의 정보 수집을 완료하였습니다.
-[2024-05-14 03:13:55][DEBUG]Image 'https://img1.kakaocdn.net/thumb/C320x320@2x.fwebp.q82/?fname=https%3A%2F%2Fst.kakaocdn.net%2Fproduct%2Fgift%2Fproduct%2F20240227135807_467d4b42ddfd42a3a428515e9f30290b.jpg' download completed
-[2024-05-14 03:13:56][INFO]SSF 크롤링을 시작합니다!
-[2024-05-14 03:13:56][INFO]SSF의 shoes 브랜드 크롤링을 시작합니다!
-[2024-05-14 03:14:26][DEBUG]Get *https://www.ssfshop.com/10-Corso-Como/SHOES/list?dspCtgryNo=SFMA42A23&brandShopNo=BDMA23&brndShopId=CCPB* page
-[2024-05-14 03:14:26][DEBUG]SSF : Total 2 of pages 
-[2024-05-14 03:14:32][DEBUG]Get *https://www.ssfshop.com/10-Corso-Como/SHOES/list?dspCtgryNo=SFMA42A23&brandShopNo=BDMA23&brndShopId=CCPB&currentPage=1* page
-[2024-05-14 03:14:32][INFO]SSF_shoes: 총 0개의 신상품을 발견 하였습니다.
-[2024-05-14 03:14:32][INFO]SFF_shoes : 총 2개의 재고 확인 상품을 발견 하였습니다.
-[2024-05-14 03:14:56][INFO]재고 확인 상품 (Men) Id2534 Bad Bunny Campus - Brown의 정보 수집을 완료하였습니다.
-[2024-05-14 03:14:56][DEBUG]Image 'https://img.ssfshop.com/cmd/LB_500x660/src/https://img.ssfshop.com/goods/CCPB/24/05/02/GM0024050252172_0_THNAIL_ORGINL_20240503171334114.jpg' download failed
-[2024-05-14 03:14:57][DEBUG]Image 'https://img.ssfshop.com/cmd/LB_500x660/src/https://img.ssfshop.com/goods/CCPB/24/05/02/GM0024050252172_0_THNAIL_ORGINL_20240503171334114.jpg' download failed
-[2024-05-14 03:14:57][DEBUG]Image 'https://img.ssfshop.com/cmd/LB_500x660/src/https://img.ssfshop.com/goods/CCPB/24/05/02/GM0024050252172_0_THNAIL_ORGINL_20240503171334114.jpg' download failed
-[2024-05-14 03:14:57][DEBUG]Image 'https://img.ssfshop.com/cmd/LB_500x660/src/https://img.ssfshop.com/goods/CCPB/24/05/02/GM0024050252172_0_THNAIL_ORGINL_20240503171334114.jpg' download failed
-[2024-05-14 03:14:57][DEBUG]Image 'https://img.ssfshop.com/cmd/LB_500x660/src/https://img.ssfshop.com/goods/CCPB/24/05/02/GM0024050252172_0_THNAIL_ORGINL_20240503171334114.jpg' download failed
-[2024-05-14 03:14:57][DEBUG]Image 'https://img.ssfshop.com/cmd/LB_500x660/src/https://img.ssfshop.com/goods/CCPB/24/05/02/GM0024050252172_0_THNAIL_ORGINL_20240503171334114.jpg' download failed
-[2024-05-14 03:14:57][DEBUG]Img size is under 50KB or cannot download image 'thumbnail'
-[2024-05-14 03:15:20][INFO]재고 확인 상품 (Men) US5-S Gel-Quantum Kinetic - Blue의 정보 수집을 완료하였습니다.
-[2024-05-14 03:15:20][DEBUG]Image 'https://img.ssfshop.com/cmd/LB_500x660/src/https://img.ssfshop.com/goods/ECBR/24/04/25/GM0024042567633_0_THNAIL_ORGINL_20240425171339428.jpg' download failed
-[2024-05-14 03:15:20][DEBUG]Image 'https://img.ssfshop.com/cmd/LB_500x660/src/https://img.ssfshop.com/goods/ECBR/24/04/25/GM0024042567633_0_THNAIL_ORGINL_20240425171339428.jpg' download failed
-[2024-05-14 03:15:20][DEBUG]Image 'https://img.ssfshop.com/cmd/LB_500x660/src/https://img.ssfshop.com/goods/ECBR/24/04/25/GM0024042567633_0_THNAIL_ORGINL_20240425171339428.jpg' download failed
-[2024-05-14 03:15:20][DEBUG]Image 'https://img.ssfshop.com/cmd/LB_500x660/src/https://img.ssfshop.com/goods/ECBR/24/04/25/GM0024042567633_0_THNAIL_ORGINL_20240425171339428.jpg' download failed
-[2024-05-14 03:15:21][DEBUG]Image 'https://img.ssfshop.com/cmd/LB_500x660/src/https://img.ssfshop.com/goods/ECBR/24/04/25/GM0024042567633_0_THNAIL_ORGINL_20240425171339428.jpg' download failed
-[2024-05-14 03:15:21][DEBUG]Image 'https://img.ssfshop.com/cmd/LB_500x660/src/https://img.ssfshop.com/goods/ECBR/24/04/25/GM0024042567633_0_THNAIL_ORGINL_20240425171339428.jpg' download failed
-[2024-05-14 03:15:21][DEBUG]Img size is under 50KB or cannot download image 'thumbnail'
-[2024-05-14 03:15:22][INFO]SSF의 shirts 브랜드 크롤링을 시작합니다!
-[2024-05-14 03:15:42][DEBUG]Get *https://www.ssfshop.com/10-Corso-Como/ssfshop/list?dspCtgryNo=SFMA42A20A01&brandShopNo=BDMA23&brndShopId=CCPB* page
-[2024-05-14 03:15:42][DEBUG]SSF : Total 1 of pages 
-[2024-05-14 03:15:47][DEBUG]Get *https://www.ssfshop.com/10-Corso-Como/ssfshop/list?dspCtgryNo=SFMA42A20A01&brandShopNo=BDMA23&brndShopId=CCPB&currentPage=1* page
-[2024-05-14 03:15:47][INFO]SSF_shirts: 총 0개의 신상품을 발견 하였습니다.
-[2024-05-14 03:15:47][INFO]SFF_shirts : 총 0개의 재고 확인 상품을 발견 하였습니다.
-[2024-05-14 03:15:47][INFO]Gentle Monster 크롤링을 시작합니다!
-[2024-05-14 03:15:47][INFO]Gentle Monster의 collaboration 브랜드 크롤링을 시작합니다!
-[2024-05-14 03:16:12][DEBUG]Get *https://www.gentlemonster.com/kr/shop/list/collaborations/view-all?order=newest* page
-[2024-05-14 03:16:17][INFO]Gentle Monster_collaboration : 총 0개의 신상품을 발견 하였습니다.
-[2024-05-14 03:16:17][INFO]Gentle Monster_collaboration : 총 0개의 재고 확인 상품을 발견 하였습니다.
-[2024-05-14 03:16:17][INFO]Gentle Monster의 HBA 브랜드 크롤링을 시작합니다!
-[2024-05-14 03:16:22][DEBUG]Get *https://www.gentlemonster.com/kr/shop/list/collaborations/hba?order=newest* page
-[2024-05-14 03:16:33][INFO]Gentle Monster_HBA : 총 0개의 신상품을 발견 하였습니다.
-[2024-05-14 03:16:33][INFO]Gentle Monster_HBA : 총 4개의 재고 확인 상품을 발견 하였습니다.
-[2024-05-14 03:16:38][DEBUG]Get *https://www.gentlemonster.com/kr/shop/item/hba-antagonist01/11GLD6I25MD1L* page
-[2024-05-14 03:16:39][INFO]재고 확인 상품 HBA - 안타고니스트 01의 정보 수집을 완료하였습니다.
-[2024-05-14 03:16:39][DEBUG]Image 'https://www-prd-kr.gentlemonster.com/media/catalog/product/cache/6c6f229b8a7ab97f51028776641e27d1/1/1/11001_4930671520221165705_01.jpg' download completed
-[2024-05-14 03:16:45][DEBUG]Get *https://www.gentlemonster.com/kr/shop/item/hba-antagonistw1/11GLD6I27PGWI* page
-[2024-05-14 03:16:45][INFO]재고 확인 상품 HBA - 안타고니스트 W1의 정보 수집을 완료하였습니다.
-[2024-05-14 03:16:45][DEBUG]Image 'https://www-prd-kr.gentlemonster.com/media/catalog/product/cache/6c6f229b8a7ab97f51028776641e27d1/1/1/11001_4930671520224669906_01.jpg' download failed
-[2024-05-14 03:16:45][DEBUG]Image 'https://www-prd-kr.gentlemonster.com/media/catalog/product/cache/6c6f229b8a7ab97f51028776641e27d1/1/1/11001_4930671520224669906_01.jpg' download failed
-[2024-05-14 03:16:45][DEBUG]Image 'https://www-prd-kr.gentlemonster.com/media/catalog/product/cache/6c6f229b8a7ab97f51028776641e27d1/1/1/11001_4930671520224669906_01.jpg' download failed
-[2024-05-14 03:16:46][DEBUG]Image 'https://www-prd-kr.gentlemonster.com/media/catalog/product/cache/6c6f229b8a7ab97f51028776641e27d1/1/1/11001_4930671520224669906_01.jpg' download failed
-[2024-05-14 03:16:46][DEBUG]Image 'https://www-prd-kr.gentlemonster.com/media/catalog/product/cache/6c6f229b8a7ab97f51028776641e27d1/1/1/11001_4930671520224669906_01.jpg' download failed
-[2024-05-14 03:16:46][DEBUG]Image 'https://www-prd-kr.gentlemonster.com/media/catalog/product/cache/6c6f229b8a7ab97f51028776641e27d1/1/1/11001_4930671520224669906_01.jpg' download failed
-[2024-05-14 03:16:46][DEBUG]Img size is under 50KB or cannot download image 'thumbnail'
-[2024-05-14 03:16:51][DEBUG]Get *https://www.gentlemonster.com/kr/shop/item/hba-antagonistr2/11GLD6I2AKPNA* page
-[2024-05-14 03:16:51][INFO]재고 확인 상품 HBA - 안타고니스트 R2의 정보 수집을 완료하였습니다.
-[2024-05-14 03:16:51][DEBUG]Image 'https://www-prd-kr.gentlemonster.com/media/catalog/product/cache/6c6f229b8a7ab97f51028776641e27d1/1/1/11001_4930671520229486806_01.jpg' download completed
-[2024-05-14 03:16:56][DEBUG]Get *https://www.gentlemonster.com/kr/shop/item/hba-antagonistp2/127Y07ZUYK9ED* page
-[2024-05-14 03:16:56][INFO]재고 확인 상품 HBA - 안타고니스트 P2의 정보 수집을 완료하였습니다.
-[2024-05-14 03:16:56][DEBUG]Image 'https://www-prd-kr.gentlemonster.com/media/catalog/product/cache/6c6f229b8a7ab97f51028776641e27d1/a/n/antagonist_p2_1.jpg' download completed
-[2024-05-14 03:16:57][DEBUG]Driver deleted
-[2024-05-14 03:16:58][INFO]프로세스 정보 
-이름 : python.exe 
-PID : 41416 
-현재 시스템 리소스 사용량 
-RAM : 0.515%
+[2024-05-16 20:12:21][INFO]다음 정보 신상품 정보 수집까지 0.5분 대기합니다.
+[2024-05-16 20:12:54][DEBUG]Driver created with proxy(124.175.161.154:11089)
+[2024-05-16 20:12:54][INFO]카카오 선물하기 크롤링을 시작합니다!
+[2024-05-16 20:12:54][INFO]카카오 선물하기의 stanley 브랜드 크롤링을 시작합니다!
+[2024-05-16 20:12:56][DEBUG]Get *https://gift.kakao.com/brand/10941* page
+[2024-05-16 20:13:02][INFO]Kakao_stanley : 총 0개의 신상품을 발견 하였습니다.
+[2024-05-16 20:13:02][INFO]Kakao_stanley : 총 1개의 재고 확인 상품을 발견 하였습니다.
+[2024-05-16 20:13:04][DEBUG]Get *https://gift.kakao.com/product/7868468* page
+[2024-05-16 20:13:34][ERROR]다음과 같은 오류로 프로그램을 종료합니다. : Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="mArticle"]/app-home/div/app-main/div/div/div[1]/div/cu-carousel/swiper-container/swiper-slide/img"}
+  (Session info: chrome=124.0.6367.119); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7B78C1522+60802]
+	(No symbol) [0x00007FF7B783AC22]
+	(No symbol) [0x00007FF7B76F7CE4]
+	(No symbol) [0x00007FF7B7746D4D]
+	(No symbol) [0x00007FF7B7746E1C]
+	(No symbol) [0x00007FF7B778CE37]
+	(No symbol) [0x00007FF7B776ABBF]
+	(No symbol) [0x00007FF7B778A224]
+	(No symbol) [0x00007FF7B776A923]
+	(No symbol) [0x00007FF7B7738FEC]
+	(No symbol) [0x00007FF7B7739C21]
+	GetHandleVerifier [0x00007FF7B7BC41BD+3217949]
+	GetHandleVerifier [0x00007FF7B7C06157+3488183]
+	GetHandleVerifier [0x00007FF7B7BFF0DF+3459391]
+	GetHandleVerifier [0x00007FF7B797B8E6+823622]
+	(No symbol) [0x00007FF7B7845FBF]
+	(No symbol) [0x00007FF7B7840EE4]
+	(No symbol) [0x00007FF7B7841072]
+	(No symbol) [0x00007FF7B78318C4]
+	BaseThreadInitThunk [0x00007FFF0555257D+29]
+	RtlUserThreadStart [0x00007FFF05BEAA48+40]
+
