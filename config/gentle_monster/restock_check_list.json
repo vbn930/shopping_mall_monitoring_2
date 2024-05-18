@@ -1,62 +1,62 @@
 {
 	"collaboration": [
 		[
-			"제니 - 피쉬 테일 01",
+			"\uc81c\ub2c8 - \ud53c\uc26c \ud14c\uc77c 01",
 			"https://www-prd-kr.gentlemonster.com/media/catalog/product/cache/6c6f229b8a7ab97f51028776641e27d1/f/i/fishtail-01_1_1.jpg",
 			"https://www.gentlemonster.com/kr/shop/item/fishtail01/FBJ6L5N7L44T",
 			true,
-			"구매 가능"
+			"\uad6c\ub9e4 \uac00\ub2a5"
 		],
 		[
-			"제니 - 쿠잉",
+			"\uc81c\ub2c8 - \ucfe0\uc789",
 			"https://www-prd-kr.gentlemonster.com/media/catalog/product/cache/6c6f229b8a7ab97f51028776641e27d1/c/o/cooing-01_1.jpg",
 			"https://www.gentlemonster.com/kr/shop/item/cooing/HLL3PN1HZ2CS",
 			true,
-			"재입고 예정"
+			"\uc7ac\uc785\uace0 \uc608\uc815"
 		],
 		[
-			"제니 - 피쉬 테일 BR3",
+			"\uc81c\ub2c8 - \ud53c\uc26c \ud14c\uc77c BR3",
 			"https://www-prd-kr.gentlemonster.com/media/catalog/product/cache/6c6f229b8a7ab97f51028776641e27d1/f/i/fishtail-br3_1_1.jpg",
 			"https://www.gentlemonster.com/kr/shop/item/fishtailbr3/FBJ6L5N8JG39",
 			false,
-			"구매 가능"
+			"\uad6c\ub9e4 \uac00\ub2a5"
 		],
 		[
-			"제니 - 쁘띠 쿠잉",
+			"\uc81c\ub2c8 - \uc058\ub760 \ucfe0\uc789",
 			"https://www-prd-kr.gentlemonster.com/media/catalog/product/cache/6c6f229b8a7ab97f51028776641e27d1/p/e/petite-cooing-01_1.jpg",
 			"https://www.gentlemonster.com/kr/shop/item/petitecooing/HLL3PN1IYSRY",
 			false,
-			"재입고 예정"
+			"\uc7ac\uc785\uace0 \uc608\uc815"
 		]
 	],
 	"HBA": [
 		[
-			"HBA - 안타고니스트 01",
+			"HBA - \uc548\ud0c0\uace0\ub2c8\uc2a4\ud2b8 01",
 			"https://www-prd-kr.gentlemonster.com/media/catalog/product/cache/6c6f229b8a7ab97f51028776641e27d1/1/1/11001_4930671520221165705_01.jpg",
 			"https://www.gentlemonster.com/kr/shop/item/hba-antagonist01/11GLD6I25MD1L",
 			false,
-			"품절"
+			"\ud488\uc808"
 		],
 		[
-			"HBA - 안타고니스트 W1",
+			"HBA - \uc548\ud0c0\uace0\ub2c8\uc2a4\ud2b8 W1",
 			"https://www-prd-kr.gentlemonster.com/media/catalog/product/cache/6c6f229b8a7ab97f51028776641e27d1/1/1/11001_4930671520224669906_01.jpg",
 			"https://www.gentlemonster.com/kr/shop/item/hba-antagonistw1/11GLD6I27PGWI",
 			false,
-			"품절"
+			"\ud488\uc808"
 		],
 		[
-			"HBA - 안타고니스트 R2",
+			"HBA - \uc548\ud0c0\uace0\ub2c8\uc2a4\ud2b8 R2",
 			"https://www-prd-kr.gentlemonster.com/media/catalog/product/cache/6c6f229b8a7ab97f51028776641e27d1/1/1/11001_4930671520229486806_01.jpg",
 			"https://www.gentlemonster.com/kr/shop/item/hba-antagonistr2/11GLD6I2AKPNA",
 			false,
-			"품절"
+			"\ud488\uc808"
 		],
 		[
-			"HBA - 안타고니스트 P2",
+			"HBA - \uc548\ud0c0\uace0\ub2c8\uc2a4\ud2b8 P2",
 			"https://www-prd-kr.gentlemonster.com/media/catalog/product/cache/6c6f229b8a7ab97f51028776641e27d1/a/n/antagonist_p2_1.jpg",
 			"https://www.gentlemonster.com/kr/shop/item/hba-antagonistp2/127Y07ZUYK9ED",
 			false,
-			"품절"
+			"\ud488\uc808"
 		]
 	]
 }
