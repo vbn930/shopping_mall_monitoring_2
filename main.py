@@ -83,10 +83,10 @@ def run_monitoring(logger: log_manager.Logger, resource_monitor: resource_monito
                    kakao_datas, ssf_datas, gentle_monster_datas, proxies):
     
     driver_obj = None
-    curr_proxy = proxies.pop(0)
     user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
 
     if len(proxies) != 0:
+        curr_proxy = proxies.pop(0)
         driver_obj = driver_manager.create_driver(proxy=curr_proxy, user_agent=user_agent)
         proxies.append(curr_proxy)
     else:
@@ -148,7 +148,7 @@ if __name__ == '__main__':
     # run_monitoring(logger, resource_monitor, driver_manager, hoopcity, kasina, hoopcity_discord_webhook_url, kasina_discord_webhook_url, proxies)
     
     try:
-        logger = log_manager.Logger(log_manager.LogType.BUILD)
+        logger = log_manager.Logger(log_manager.LogType.DEBUG)
         driver_manager = web_driver_manager.WebDriverManager(logger)
         kakao = kakao_crawler.KakaoCrawler(logger)
         ssf = ssf_crawler.SSFCrawler(logger)

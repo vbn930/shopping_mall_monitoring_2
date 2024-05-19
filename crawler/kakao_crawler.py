@@ -151,7 +151,7 @@ class KakaoCrawler:
             #현재 스크롤의 가장 아래로 내림
             driver.execute_script("window.scrollTo(0,document.body.scrollHeight)")
 
-            item_list = driver.find_element(By.CLASS_NAME, "list_product.scroll_hori").find_elements(By.TAG_NAME, "li")
+            item_list = driver_obj.get_element(By.CLASS_NAME, "list_product.scroll_hori").find_elements(By.TAG_NAME, "li")
             for item in item_list:
                 name = item.get_attribute("data-tiara-copy")
                 item_url = f"https://gift.kakao.com/product/{item.get_attribute('data-tiara-id')}"
@@ -190,16 +190,16 @@ class KakaoCrawler:
         
         item_price = ""
         item_discount = ""
-        item_img_url = driver.find_element(By.XPATH, '//*[@id="mArticle"]/app-home/div/app-main/div/div/div[1]/div/cu-carousel/swiper-container/swiper-slide/img').get_attribute("src")
+        item_img_url = driver_obj.get_element(By.XPATH, '//*[@id="mArticle"]/app-home/div/app-main/div/div/div[1]/div/cu-carousel/swiper-container/swiper-slide/img').get_attribute("src")
         
         if driver_obj.is_element_exist(By.CLASS_NAME, 'txt_price', driver.find_element(By.CLASS_NAME, 'view_product')):
-            item_discount = driver.find_element(By.CLASS_NAME, 'view_product').find_element(By.CLASS_NAME, 'txt_total').text.split("\n")[0] + "원"
-            item_price = driver.find_element(By.CLASS_NAME, 'view_product').find_element(By.CLASS_NAME, 'txt_price').find_element(By.CLASS_NAME, "legacy_price").text.split("\n")[0] + "원"
+            item_discount = driver_obj.get_element(By.CLASS_NAME, 'view_product').find_element(By.CLASS_NAME, 'txt_total').text.split("\n")[0] + "원"
+            item_price = driver_obj.get_element(By.CLASS_NAME, 'view_product').find_element(By.CLASS_NAME, 'txt_price').find_element(By.CLASS_NAME, "legacy_price").text.split("\n")[0] + "원"
         else:
-            item_price = driver.find_element(By.CLASS_NAME, 'txt_total').text.split("\n")[0] + "원"
+            item_price = driver_obj.get_element(By.CLASS_NAME, 'txt_total').text.split("\n")[0] + "원"
         
         if driver_obj.is_element_exist(By.CLASS_NAME, "wrap_option.fst.lst.option_on"):
-            option_elements = driver.find_element(By.CLASS_NAME, "list_option").find_elements(By.TAG_NAME, "li")
+            option_elements = driver_obj.get_element(By.CLASS_NAME, "list_option").find_elements(By.TAG_NAME, "li")
             for option_element in option_elements:
                 option_text = option_element.find_element(By.TAG_NAME, "label").text
                 option_soldout = not option_element.find_element(By.TAG_NAME, "input").is_enabled()

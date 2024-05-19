@@ -152,7 +152,7 @@ class SSFCrawler:
         driver = driver_obj.driver
         
         driver_obj.get_page(url)
-        total_item_cnt = driver.find_element(By.ID, "godTotalCount").text
+        total_item_cnt = driver_obj.get_element(By.ID, "godTotalCount").text
         
         last_page = self.get_last_page(int(total_item_cnt))
         
@@ -160,7 +160,7 @@ class SSFCrawler:
             page_url = f"{url}&currentPage={i}"
             driver_obj.get_page(page_url)
             
-            item_list = driver.find_element(By.ID, "dspGood").find_elements(By.TAG_NAME, "li")
+            item_list = driver_obj.get_element(By.ID, "dspGood").find_elements(By.TAG_NAME, "li")
 
             for item in item_list:
                 item_info = []
@@ -199,19 +199,19 @@ class SSFCrawler:
         item_discount = ""
         
         if driver_obj.is_element_exist(By.CLASS_NAME, 'cost'):
-            item_price = driver.find_element(By.CLASS_NAME, 'cost').find_element(By.TAG_NAME, "del").text
+            item_price = driver_obj.get_element(By.CLASS_NAME, 'cost').find_element(By.TAG_NAME, "del").text
             item_price = item_price + "원"
             
-            item_discount = driver.find_element(By.CLASS_NAME, 'price').text
+            item_discount = driver_obj.get_element(By.CLASS_NAME, 'price').text
             item_discount = item_discount + "원"
         else:
-            item_price = driver.find_element(By.CLASS_NAME, 'price').text  + "원"
+            item_price = driver_obj.get_element(By.CLASS_NAME, 'price').text  + "원"
             
         ssf_item.price = item_price
         ssf_item.discount = item_discount
         
         if driver_obj.is_element_exist(By.XPATH, '//*[@id="content"]/section/div[2]/div[2]/div[6]/div[1]/div/ul'):
-            option_elements = driver.find_element(By.XPATH, '//*[@id="content"]/section/div[2]/div[2]/div[6]/div[1]/div/ul').find_elements(By.NAME, "sizeItmNo")
+            option_elements = driver_obj.get_element(By.XPATH, '//*[@id="content"]/section/div[2]/div[2]/div[6]/div[1]/div/ul').find_elements(By.NAME, "sizeItmNo")
             for option_element in option_elements:
                 option_text = ""
                 option_attr = option_element.get_attribute("itmstatcd")
@@ -221,7 +221,7 @@ class SSFCrawler:
                 option = Option(size=option_text, is_soldout=option_soldout)
                 options.append(option)
             
-            option_elements = driver.find_element(By.XPATH, '//*[@id="content"]/section/div[2]/div[2]/div[6]/div[1]/div/ul').find_elements(By.TAG_NAME, "li")
+            option_elements = driver_obj.get_element(By.XPATH, '//*[@id="content"]/section/div[2]/div[2]/div[6]/div[1]/div/ul').find_elements(By.TAG_NAME, "li")
             for i in range(len(option_elements)):
                 option_text = option_elements[i].find_element(By.TAG_NAME, "label").text
                 options[i].size = option_text

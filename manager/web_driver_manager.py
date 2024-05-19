@@ -3,6 +3,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.webdriver import WebDriver
 from selenium.webdriver.chrome.service import Service
 from selenium.common.exceptions import NoSuchElementException
+from selenium.webdriver.remote.webelement import WebElement
 from dataclasses import dataclass
 import zipfile
 import requests
@@ -52,6 +53,35 @@ class Driver:
             is_exist = False
         return is_exist
     
+    def get_elements(self, by, value, cnt=0):
+        MAX_RETRY = 5
+        self.driver.implicitly_wait(5)
+        try:
+            return self.driver.find_elements(by, value)
+        except Exception as e:
+            if cnt < MAX_RETRY:
+                self.driver.implicitly_wait(30)
+                self.driver.refresh()
+                self.logger.log_debug(f"Get elements retry : {cnt}, Error : {e}")
+                return self.get_elements(by, value, cnt=cnt+1)
+            else:
+                self.logger.log_error(f"Failed to get elements due to this error : {e}")
+                
+    def get_element(self, by, value, cnt=0):
+        MAX_RETRY = 5
+        self.driver.implicitly_wait(5)
+        try:
+            return self.driver.find_element(by, value)
+        except Exception as e:
+            if cnt < MAX_RETRY:
+                self.driver.implicitly_wait(30)
+                self.driver.refresh()
+                self.logger.log_debug(f"Get element retry : {cnt}, Error : {e}")
+                return self.get_element(by, value, cnt=cnt+1)
+            else:
+                self.logger.log_error(f"Failed to get element due to this error : {e}")
+            
+            
     def __del__(self):
         self.driver.quit()
         del self.driver

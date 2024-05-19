@@ -125,7 +125,7 @@ class GentleMonsterCrawler:
         time.sleep(5)
         
         if driver_obj.is_element_exist(By.ID, "onetrust-accept-btn-handler"):
-            driver.find_element(By.ID, "onetrust-accept-btn-handler").click()
+            driver_obj.get_element(By.ID, "onetrust-accept-btn-handler").click()
         
         #스크롤 내리기 전 위치
         scroll_location = driver.execute_script("return document.body.scrollHeight")
@@ -136,7 +136,7 @@ class GentleMonsterCrawler:
             #현재 스크롤의 가장 아래로 내림
             driver.execute_script("window.scrollTo(0,document.body.scrollHeight)")
 
-            product_elements = driver.find_element(By.CLASS_NAME, "product-list__wrapper.inline").find_elements(By.TAG_NAME, "li")
+            product_elements = driver_obj.get_element(By.CLASS_NAME, "product-list__wrapper.inline").find_elements(By.TAG_NAME, "li")
             for product_element in product_elements:
                 item_details = product_element.find_element(By.CLASS_NAME, "product__link")
                 name = item_details.get_attribute("product-name")
@@ -169,16 +169,16 @@ class GentleMonsterCrawler:
         driver_obj.get_page(item_url)
         options = []
         
-        item_price = driver.find_element(By.CLASS_NAME, 'product-info__top.clearfix').find_element(By.TAG_NAME, "div").text
+        item_price = driver_obj.get_element(By.CLASS_NAME, 'product-info__top.clearfix').find_element(By.TAG_NAME, "div").text
         if driver_obj.is_element_exist(By.CLASS_NAME, "detail__btn-list"):
-            item_discount = driver.find_element(By.CLASS_NAME, "detail__btn-list").text
+            item_discount = driver_obj.get_element(By.CLASS_NAME, "detail__btn-list").text
             if "품절" in item_discount:
                 item_discount = "품절"
             else:
                 item_discount = "구매 가능"
         else:
             item_discount = "재입고 예정"
-        img_url = driver.find_element(By.XPATH, '//*[@id="container_sq"]/div[1]/div/div[1]/div[1]/div/div[1]/div/img').get_attribute("src")
+        img_url = driver_obj.get_element(By.XPATH, '//*[@id="container_sq"]/div[1]/div/div[1]/div[1]/div/div[1]/div/img').get_attribute("src")
         
         return options, item_price, item_discount, img_url
     

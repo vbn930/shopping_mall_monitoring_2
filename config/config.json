@@ -1,10 +1,5 @@
 {
     "proxies": [
-        "124.175.161.152:11089:6071GGAASSeafec:ULbkSz29",
-        "124.175.161.153:11089:6071GGAASSeafec:cpR1LcWv",
-        "124.175.161.154:11089:6071GGAASSeafec:oujCHEgn",
-        "124.175.161.155:11089:6071GGAASSeafec:AaiVs4Xi",
-        "124.175.161.156:11089:6071GGAASSeafec:5WE5GuBE"
     ],
     "wait_time": 0.5
 }
