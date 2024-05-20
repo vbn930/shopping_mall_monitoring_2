@@ -148,7 +148,7 @@ if __name__ == '__main__':
     # run_monitoring(logger, resource_monitor, driver_manager, hoopcity, kasina, hoopcity_discord_webhook_url, kasina_discord_webhook_url, proxies)
     
     try:
-        logger = log_manager.Logger(log_manager.LogType.DEBUG)
+        logger = log_manager.Logger(log_manager.LogType.BUILD)
         driver_manager = web_driver_manager.WebDriverManager(logger)
         kakao = kakao_crawler.KakaoCrawler(logger)
         ssf = ssf_crawler.SSFCrawler(logger)

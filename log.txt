@@ -1,39 +1,51 @@
-[2024-05-19 03:55:26][INFO]다음 정보 신상품 정보 수집까지 0.5분 대기합니다.
-[2024-05-19 03:55:57][DEBUG]Driver created without proxy
-[2024-05-19 03:55:57][INFO]카카오 선물하기 크롤링을 시작합니다!
-[2024-05-19 03:55:57][INFO]카카오 선물하기의 stanley 브랜드 크롤링을 시작합니다!
-[2024-05-19 03:55:58][DEBUG]Get *https://gift.kakao.com/brand/10941* page
-[2024-05-19 03:55:58][INFO]Kakao_stanley : 총 0개의 신상품을 발견 하였습니다.
-[2024-05-19 03:55:58][INFO]Kakao_stanley : 총 0개의 재고 확인 상품을 발견 하였습니다.
-[2024-05-19 03:55:58][INFO]카카오 선물하기의 SF 브랜드 크롤링을 시작합니다!
-[2024-05-19 03:55:59][DEBUG]Get *https://gift.kakao.com/brand/2184?display=basic* page
-[2024-05-19 03:55:59][INFO]Kakao_SF : 총 0개의 신상품을 발견 하였습니다.
-[2024-05-19 03:55:59][INFO]Kakao_SF : 총 0개의 재고 확인 상품을 발견 하였습니다.
-[2024-05-19 03:55:59][INFO]SSF 크롤링을 시작합니다!
-[2024-05-19 03:55:59][INFO]SSF의 shoes 브랜드 크롤링을 시작합니다!
-[2024-05-19 03:56:00][DEBUG]Get *https://www.ssfshop.com/10-Corso-Como/SHOES/list?dspCtgryNo=SFMA42A23&brandShopNo=BDMA23&brndShopId=CCPB* page
-[2024-05-19 03:56:00][DEBUG]SSF : Total 2 of pages 
-[2024-05-19 03:56:00][DEBUG]Get *https://www.ssfshop.com/10-Corso-Como/SHOES/list?dspCtgryNo=SFMA42A23&brandShopNo=BDMA23&brndShopId=CCPB&currentPage=1* page
-[2024-05-19 03:56:00][INFO]SSF_shoes: 총 0개의 신상품을 발견 하였습니다.
-[2024-05-19 03:56:00][INFO]SFF_shoes : 총 0개의 재고 확인 상품을 발견 하였습니다.
-[2024-05-19 03:56:00][INFO]SSF의 shirts 브랜드 크롤링을 시작합니다!
-[2024-05-19 03:56:00][DEBUG]Get *https://www.ssfshop.com/10-Corso-Como/ssfshop/list?dspCtgryNo=SFMA42A20A01&brandShopNo=BDMA23&brndShopId=CCPB* page
-[2024-05-19 03:56:00][DEBUG]SSF : Total 1 of pages 
-[2024-05-19 03:56:01][DEBUG]Get *https://www.ssfshop.com/10-Corso-Como/ssfshop/list?dspCtgryNo=SFMA42A20A01&brandShopNo=BDMA23&brndShopId=CCPB&currentPage=1* page
-[2024-05-19 03:56:01][INFO]SSF_shirts: 총 0개의 신상품을 발견 하였습니다.
-[2024-05-19 03:56:01][INFO]SFF_shirts : 총 0개의 재고 확인 상품을 발견 하였습니다.
-[2024-05-19 03:56:01][INFO]Gentle Monster 크롤링을 시작합니다!
-[2024-05-19 03:56:01][INFO]Gentle Monster의 collaboration 브랜드 크롤링을 시작합니다!
-[2024-05-19 03:56:02][DEBUG]Get *https://www.gentlemonster.com/kr/shop/list/collaborations/view-all?order=newest* page
-[2024-05-19 03:56:07][INFO]Gentle Monster_collaboration : 총 0개의 신상품을 발견 하였습니다.
-[2024-05-19 03:56:08][INFO]Gentle Monster_collaboration : 총 0개의 재고 확인 상품을 발견 하였습니다.
-[2024-05-19 03:56:08][INFO]Gentle Monster의 HBA 브랜드 크롤링을 시작합니다!
-[2024-05-19 03:56:09][DEBUG]Get *https://www.gentlemonster.com/kr/shop/list/collaborations/hba?order=newest* page
-[2024-05-19 03:56:19][INFO]Gentle Monster_HBA : 총 0개의 신상품을 발견 하였습니다.
-[2024-05-19 03:56:19][INFO]Gentle Monster_HBA : 총 0개의 재고 확인 상품을 발견 하였습니다.
-[2024-05-19 03:56:19][DEBUG]Driver deleted
-[2024-05-19 03:56:19][INFO]프로세스 정보 
+[2024-05-20 15:34:41][INFO]다음 정보 신상품 정보 수집까지 0.5분 대기합니다.
+[2024-05-20 15:35:12][DEBUG]Driver created without proxy
+[2024-05-20 15:35:12][INFO]카카오 선물하기 크롤링을 시작합니다!
+[2024-05-20 15:35:12][INFO]카카오 선물하기의 stanley 브랜드 크롤링을 시작합니다!
+[2024-05-20 15:35:13][DEBUG]Get *https://gift.kakao.com/brand/10941* page
+[2024-05-20 15:35:13][INFO]Kakao_stanley : 총 0개의 신상품을 발견 하였습니다.
+[2024-05-20 15:35:13][INFO]Kakao_stanley : 총 61개의 재고 확인 상품을 발견 하였습니다.
+[2024-05-20 15:35:13][DEBUG]Get *https://gift.kakao.com/product/7868468* page
+[2024-05-20 15:35:19][INFO]재고 확인 상품 [스탠리공식유통사] 퀜처 H2.0 플로우스테이트 텀블러 887ml의 정보 변경 사항이 없습니다.
+[2024-05-20 15:35:19][DEBUG]Get *https://gift.kakao.com/product/7868266* page
+[2024-05-20 15:35:24][INFO]재고 확인 상품 [스탠리공식유통사] 퀜처 H2.0 플로우스테이트 텀블러 591ml의 정보 변경 사항이 없습니다.
+[2024-05-20 15:35:24][DEBUG]stanley 재입고 알림 제품 업데이트 완료.
+[2024-05-20 15:35:24][INFO]카카오 선물하기의 SF 브랜드 크롤링을 시작합니다!
+[2024-05-20 15:35:25][DEBUG]Get *https://gift.kakao.com/brand/2184?display=basic* page
+[2024-05-20 15:35:25][INFO]Kakao_SF : 총 0개의 신상품을 발견 하였습니다.
+[2024-05-20 15:35:25][INFO]Kakao_SF : 총 16개의 재고 확인 상품을 발견 하였습니다.
+[2024-05-20 15:35:25][DEBUG]SF 재입고 알림 제품 업데이트 완료.
+[2024-05-20 15:35:25][INFO]SSF 크롤링을 시작합니다!
+[2024-05-20 15:35:25][INFO]SSF의 shoes 브랜드 크롤링을 시작합니다!
+[2024-05-20 15:35:26][DEBUG]Get *https://www.ssfshop.com/10-Corso-Como/SHOES/list?dspCtgryNo=SFMA42A23&brandShopNo=BDMA23&brndShopId=CCPB* page
+[2024-05-20 15:35:26][DEBUG]SSF : Total 2 of pages 
+[2024-05-20 15:35:26][DEBUG]Get *https://www.ssfshop.com/10-Corso-Como/SHOES/list?dspCtgryNo=SFMA42A23&brandShopNo=BDMA23&brndShopId=CCPB&currentPage=1* page
+[2024-05-20 15:35:26][INFO]SSF_shoes: 총 0개의 신상품을 발견 하였습니다.
+[2024-05-20 15:35:26][INFO]SFF_shoes : 총 4개의 재고 확인 상품을 발견 하였습니다.
+[2024-05-20 15:35:32][INFO]재고 확인 상품 (Men) Toga × Suicoke Tono - Black의 정보 변경 사항이 없습니다.
+[2024-05-20 15:35:32][DEBUG]shoes 재입고 알림 제품 업데이트 완료.
+[2024-05-20 15:35:32][INFO]SSF의 shirts 브랜드 크롤링을 시작합니다!
+[2024-05-20 15:35:32][DEBUG]Get *https://www.ssfshop.com/10-Corso-Como/ssfshop/list?dspCtgryNo=SFMA42A20A01&brandShopNo=BDMA23&brndShopId=CCPB* page
+[2024-05-20 15:35:32][DEBUG]SSF : Total 1 of pages 
+[2024-05-20 15:35:32][DEBUG]Get *https://www.ssfshop.com/10-Corso-Como/ssfshop/list?dspCtgryNo=SFMA42A20A01&brandShopNo=BDMA23&brndShopId=CCPB&currentPage=1* page
+[2024-05-20 15:35:32][INFO]SSF_shirts: 총 0개의 신상품을 발견 하였습니다.
+[2024-05-20 15:35:32][INFO]SFF_shirts : 총 37개의 재고 확인 상품을 발견 하였습니다.
+[2024-05-20 15:35:33][DEBUG]shirts 재입고 알림 제품 업데이트 완료.
+[2024-05-20 15:35:33][INFO]Gentle Monster 크롤링을 시작합니다!
+[2024-05-20 15:35:33][INFO]Gentle Monster의 collaboration 브랜드 크롤링을 시작합니다!
+[2024-05-20 15:35:35][DEBUG]Get *https://www.gentlemonster.com/kr/shop/list/collaborations/view-all?order=newest* page
+[2024-05-20 15:35:40][INFO]Gentle Monster_collaboration : 총 0개의 신상품을 발견 하였습니다.
+[2024-05-20 15:35:40][INFO]Gentle Monster_collaboration : 총 4개의 재고 확인 상품을 발견 하였습니다.
+[2024-05-20 15:35:41][DEBUG]Get *https://www.gentlemonster.com/kr/shop/item/fishtail01/FBJ6L5N7L44T* page
+[2024-05-20 15:35:46][INFO]재고 확인 상품 제니 - 피쉬 테일 01의 정보 변경 사항이 없습니다.
+[2024-05-20 15:35:46][DEBUG]collaboration 재입고 알림 제품 업데이트 완료.
+[2024-05-20 15:35:46][INFO]Gentle Monster의 HBA 브랜드 크롤링을 시작합니다!
+[2024-05-20 15:35:47][DEBUG]Get *https://www.gentlemonster.com/kr/shop/list/collaborations/hba?order=newest* page
+[2024-05-20 15:35:57][INFO]Gentle Monster_HBA : 총 0개의 신상품을 발견 하였습니다.
+[2024-05-20 15:35:57][INFO]Gentle Monster_HBA : 총 0개의 재고 확인 상품을 발견 하였습니다.
+[2024-05-20 15:35:57][DEBUG]Driver deleted
+[2024-05-20 15:35:58][INFO]프로세스 정보 
 이름 : python.exe 
-PID : 22180 
+PID : 31856 
 현재 시스템 리소스 사용량 
-RAM : 0.545%
+RAM : 0.519%

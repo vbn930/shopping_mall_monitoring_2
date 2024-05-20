@@ -4,7 +4,7 @@
 			"[스탠리공식유통사] 퀜처 H2.0 플로우스테이트 텀블러 887ml",
 			"https://img1.kakaocdn.net/thumb/C320x320@2x.fwebp.q82/?fname=https%3A%2F%2Fst.kakaocdn.net%2Fproduct%2Fgift%2Fproduct%2F20240508101036_6c7f02cb957848a69a25018a664a3c89.jpg",
 			"https://gift.kakao.com/product/7868468",
-			false,
+			true,
 			[
 				[
 					"오키드 10-10827-432",
@@ -56,7 +56,7 @@
 			"[스탠리공식유통사] 퀜처 H2.0 플로우스테이트 텀블러 591ml",
 			"https://img1.kakaocdn.net/thumb/C320x320@2x.fwebp.q82/?fname=https%3A%2F%2Fst.kakaocdn.net%2Fproduct%2Fgift%2Fproduct%2F20240415152827_943e89054c0e4467b97cde08558b55a5.jpg",
 			"https://gift.kakao.com/product/7868266",
-			false,
+			true,
 			[
 				[
 					"크림2.0 10-10826-276",
@@ -1149,6 +1149,262 @@
 				],
 				[
 					"레거시 쿼드백 네버리크 머그 354ml 블랙",
+					false
+				]
+			]
+		],
+		[
+			"[스탠리공식유통사] 퀜처 H2.0 플로우스테이트 텀블러 887ml",
+			"https://img1.kakaocdn.net/thumb/C320x320@2x.fwebp.q82/?fname=https%3A%2F%2Fst.kakaocdn.net%2Fproduct%2Fgift%2Fproduct%2F20240508101036_6c7f02cb957848a69a25018a664a3c89.jpg",
+			"https://gift.kakao.com/product/7868468",
+			false,
+			[
+				[
+					"오키드 10-10827-432",
+					false
+				],
+				[
+					"로즈쿼츠2.0 10-10827-648",
+					false
+				],
+				[
+					"스톤 10-10827-650",
+					true
+				],
+				[
+					"크림2.0 10-10827-649",
+					false
+				],
+				[
+					"블랙2.010-10827-706",
+					false
+				],
+				[
+					"미스트10-10827-621",
+					true
+				],
+				[
+					"포멜로10-10827-709",
+					false
+				],
+				[
+					"프로스트화이트10-10827-707",
+					false
+				],
+				[
+					"애쉬10-10827-705",
+					true
+				],
+				[
+					"블룸핑크10-10827-622",
+					false
+				],
+				[
+					"넥타린피치 10-11825-196",
+					true
+				]
+			]
+		],
+		[
+			"[스탠리공식유통사] 퀜처 H2.0 플로우스테이트 텀블러 591ml",
+			"https://img1.kakaocdn.net/thumb/C320x320@2x.fwebp.q82/?fname=https%3A%2F%2Fst.kakaocdn.net%2Fproduct%2Fgift%2Fproduct%2F20240415152827_943e89054c0e4467b97cde08558b55a5.jpg",
+			"https://gift.kakao.com/product/7868266",
+			false,
+			[
+				[
+					"크림2.0 10-10826-276",
+					false
+				],
+				[
+					"로즈쿼츠2.0 10-10826-275",
+					false
+				],
+				[
+					"블랙2.0 10-10826-273",
+					false
+				],
+				[
+					"스톤 10-10826-277",
+					true
+				],
+				[
+					"미스트 10-10826-256",
+					false
+				],
+				[
+					"포멜로 10-10826-281",
+					false
+				],
+				[
+					"프로스트화이트 10-10826-280",
+					false
+				]
+			]
+		],
+		[
+			"[스탠리공식유통사] 퀜처 H2.0 플로우스테이트 텀블러 1.18L",
+			"https://img1.kakaocdn.net/thumb/C320x320@2x.fwebp.q82/?fname=https%3A%2F%2Fst.kakaocdn.net%2Fproduct%2Fgift%2Fproduct%2F20240508152609_64944efc8c114a969ee9b35a86d87208.jpg",
+			"https://gift.kakao.com/product/7868571",
+			false,
+			[
+				[
+					"블룸핑크 10-10824-711",
+					false
+				],
+				[
+					"피오니10-10824-712",
+					false
+				],
+				[
+					"크림2.0 10-10824-819",
+					false
+				],
+				[
+					"프로스트화이트10-10824-820",
+					false
+				],
+				[
+					"로즈쿼츠2.0 10-10824-821",
+					false
+				],
+				[
+					"블랙2.0 10-10824-824",
+					false
+				],
+				[
+					"오키드 10-10824-825",
+					false
+				],
+				[
+					"포멜로 10-10824-828",
+					false
+				]
+			]
+		],
+		[
+			"[스탠리공식유통사] 퀜처 H2.0 플로우스테이트 텀블러 887ml",
+			"https://img1.kakaocdn.net/thumb/C320x320@2x.fwebp.q82/?fname=https%3A%2F%2Fst.kakaocdn.net%2Fproduct%2Fgift%2Fproduct%2F20240508101036_6c7f02cb957848a69a25018a664a3c89.jpg",
+			"https://gift.kakao.com/product/7868468",
+			false,
+			[
+				[
+					"오키드 10-10827-432",
+					false
+				],
+				[
+					"로즈쿼츠2.0 10-10827-648",
+					false
+				],
+				[
+					"스톤 10-10827-650",
+					true
+				],
+				[
+					"크림2.0 10-10827-649",
+					false
+				],
+				[
+					"블랙2.010-10827-706",
+					false
+				],
+				[
+					"미스트10-10827-621",
+					true
+				],
+				[
+					"포멜로10-10827-709",
+					false
+				],
+				[
+					"프로스트화이트10-10827-707",
+					false
+				],
+				[
+					"애쉬10-10827-705",
+					true
+				],
+				[
+					"블룸핑크10-10827-622",
+					false
+				],
+				[
+					"넥타린피치 10-11825-196",
+					true
+				]
+			]
+		],
+		[
+			"[스탠리공식유통사] 퀜처 H2.0 플로우스테이트 텀블러 591ml",
+			"https://img1.kakaocdn.net/thumb/C320x320@2x.fwebp.q82/?fname=https%3A%2F%2Fst.kakaocdn.net%2Fproduct%2Fgift%2Fproduct%2F20240415152827_943e89054c0e4467b97cde08558b55a5.jpg",
+			"https://gift.kakao.com/product/7868266",
+			false,
+			[
+				[
+					"크림2.0 10-10826-276",
+					false
+				],
+				[
+					"로즈쿼츠2.0 10-10826-275",
+					false
+				],
+				[
+					"블랙2.0 10-10826-273",
+					false
+				],
+				[
+					"스톤 10-10826-277",
+					true
+				],
+				[
+					"미스트 10-10826-256",
+					false
+				],
+				[
+					"포멜로 10-10826-281",
+					false
+				],
+				[
+					"프로스트화이트 10-10826-280",
+					false
+				]
+			]
+		],
+		[
+			"[스탠리공식유통사] 퀜처 H2.0 플로우스테이트 텀블러 1.18L",
+			"https://img1.kakaocdn.net/thumb/C320x320@2x.fwebp.q82/?fname=https%3A%2F%2Fst.kakaocdn.net%2Fproduct%2Fgift%2Fproduct%2F20240508152609_64944efc8c114a969ee9b35a86d87208.jpg",
+			"https://gift.kakao.com/product/7868571",
+			false,
+			[
+				[
+					"블룸핑크 10-10824-711",
+					false
+				],
+				[
+					"피오니10-10824-712",
+					false
+				],
+				[
+					"크림2.0 10-10824-819",
+					false
+				],
+				[
+					"프로스트화이트10-10824-820",
+					false
+				],
+				[
+					"로즈쿼츠2.0 10-10824-821",
+					false
+				],
+				[
+					"블랙2.0 10-10824-824",
+					false
+				],
+				[
+					"오키드 10-10824-825",
+					false
+				],
+				[
+					"포멜로 10-10824-828",
 					false
 				]
 			]
