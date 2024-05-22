@@ -160,6 +160,10 @@ class KakaoCrawler:
         driver.maximize_window()
         
         driver_obj.get_page(url)
+
+        if not driver_obj.is_element_exist(By.CLASS_NAME, "list_product.scroll_hori"):
+            return False
+        
         #스크롤 내리기 전 위치
         scroll_location = driver.execute_script("return document.body.scrollHeight")
 
@@ -231,43 +235,46 @@ class KakaoCrawler:
         json_path = ".\config\kakao\latest_item_info.json"
         latest_item_url = self.get_latest_item(json_path, brand)
         new_items = self.find_items_in_list(driver_obj, url, latest_item_url)
-        self.items += new_items
-        if len(new_items) != 0:
-            self.set_latest_item(json_path, brand, new_items[0].url)
-        
-        self.logger.log_info(f"Kakao_{brand} : 총 {len(self.items)}개의 신상품을 발견 하였습니다.")
-        for i in range(len(self.items)):
-            item_option, item_price, item_discount, item_img_url = self.get_item_detail_info(driver_obj, self.items[i].url)
-            self.items[i].options = item_option
-            self.items[i].price = item_price
-            self.items[i].discount = item_discount
-            self.items[i].img_url = item_img_url
-            self.logger.log_info(f"신상품 {self.items[i].name}의 정보 수집을 완료하였습니다.")
-            self.add_item_to_database(self.items[i])
-            self.send_discord_web_hook(driver_manager, self.items[i], webhook_url)
-        
-        self.add_items_to_restock_check_list(brand)
-        restock_item_list, restock_check = self.get_restock_check_items(brand)
-        self.logger.log_info(f"Kakao_{brand} : 총 {restock_check.count(True)}개의 재고 확인 상품을 발견 하였습니다.")
-        for i in range(len(restock_item_list)):
-            if restock_check[i] == True:
-                restock_item = restock_item_list[i]
-                item_option, item_price, item_discount, item_img_url = self.get_item_detail_info(driver_obj, restock_item.url)
-                if restock_item.options != item_option and restock_check[i] == True:
-                    restock_item.options = item_option
-                    restock_item.price = item_price
-                    restock_item.img_url = item_img_url
-                    restock_item.discount = item_discount
-                    self.logger.log_info(f"재고 확인 상품 {restock_item.name}의 정보 수집을 완료하였습니다.")
-                    self.items.append(restock_item)
-                    self.add_item_to_database(restock_item)
-                    self.send_discord_web_hook(driver_manager, restock_item, webhook_url)
-                else:
-                    self.logger.log_info(f"재고 확인 상품 {restock_item.name}의 정보 변경 사항이 없습니다.")
-        
-        if len(restock_item_list) != 0:
-            self.update_restock_check_items(brand, restock_item_list, restock_check)
-        
+        if new_items != False:
+            self.items += new_items
+            if len(new_items) != 0:
+                self.set_latest_item(json_path, brand, new_items[0].url)
+            
+            self.logger.log_info(f"Kakao_{brand} : 총 {len(self.items)}개의 신상품을 발견 하였습니다.")
+            for i in range(len(self.items)):
+                item_option, item_price, item_discount, item_img_url = self.get_item_detail_info(driver_obj, self.items[i].url)
+                self.items[i].options = item_option
+                self.items[i].price = item_price
+                self.items[i].discount = item_discount
+                self.items[i].img_url = item_img_url
+                self.logger.log_info(f"신상품 {self.items[i].name}의 정보 수집을 완료하였습니다.")
+                self.add_item_to_database(self.items[i])
+                self.send_discord_web_hook(driver_manager, self.items[i], webhook_url)
+            
+            self.add_items_to_restock_check_list(brand)
+            restock_item_list, restock_check = self.get_restock_check_items(brand)
+            self.logger.log_info(f"Kakao_{brand} : 총 {restock_check.count(True)}개의 재고 확인 상품을 발견 하였습니다.")
+            for i in range(len(restock_item_list)):
+                if restock_check[i] == True:
+                    restock_item = restock_item_list[i]
+                    item_option, item_price, item_discount, item_img_url = self.get_item_detail_info(driver_obj, restock_item.url)
+                    if restock_item.options != item_option and restock_check[i] == True:
+                        restock_item.options = item_option
+                        restock_item.price = item_price
+                        restock_item.img_url = item_img_url
+                        restock_item.discount = item_discount
+                        self.logger.log_info(f"재고 확인 상품 {restock_item.name}의 정보 수집을 완료하였습니다.")
+                        self.items.append(restock_item)
+                        self.add_item_to_database(restock_item)
+                        self.send_discord_web_hook(driver_manager, restock_item, webhook_url)
+                    else:
+                        self.logger.log_info(f"재고 확인 상품 {restock_item.name}의 정보 변경 사항이 없습니다.")
+            
+            if len(restock_item_list) != 0:
+                self.update_restock_check_items(brand, restock_item_list, restock_check)
+        else:
+            self.logger.log_info(f"브랜드 {brand}의 상품이 존재하지 않습니다.")
+            
     def save_db_data_as_excel(self, save_path, file_name):
         data_frame = pd.DataFrame(self.database)
         data_frame.to_excel(f"{save_path}/{file_name}.xlsx", index=False)
