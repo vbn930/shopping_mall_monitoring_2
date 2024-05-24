@@ -67,7 +67,7 @@ class GentleMonsterCrawler:
         self.database["URL"].append(item.url)
         
     def get_latest_item(self, json_path, brand):
-        with open(json_path) as file:
+        with open(json_path, encoding='UTF-8') as file:
             data = json.load(file)
             
         latest_item_url = ""
@@ -127,13 +127,13 @@ class GentleMonsterCrawler:
         self.logger.log_debug(f"{brand} 재입고 알림 제품 업데이트 완료.")
         
     def set_latest_item(self, json_path, brand, latest_item_url):
-        with open(json_path) as file:
+        with open(json_path, encoding='UTF-8') as file:
             data = json.load(file)
             
         data[brand] = latest_item_url
         
         with open(json_path, 'w', encoding='utf-8') as file:
-            json.dump(data, file, indent="\t")
+            json.dump(data, file, indent="\t", ensure_ascii=False)
     
     def find_items_in_list(self, driver_obj: web_driver_manager.Driver, url, latest_item_url):
         driver = driver_obj.driver
@@ -159,7 +159,7 @@ class GentleMonsterCrawler:
                 item_details = product_element.find_element(By.CLASS_NAME, "product__link")
                 name = item_details.get_attribute("product-name")
                 item_url = item_details.get_attribute("href")
-                if latest_item_url == item_url:
+                if latest_item_url == name:
                     driver.minimize_window()
                     return items
                 item = GentleMonsterItem(name=name, price="", discount="", img_url="", url=item_url, options=[])
@@ -206,7 +206,7 @@ class GentleMonsterCrawler:
         new_items = self.find_items_in_list(driver_obj, url, latest_item_url)
         self.items += new_items
         if len(new_items) != 0:
-            self.set_latest_item(json_path, brand, new_items[0].url)
+            self.set_latest_item(json_path, brand, new_items[0].name)
         
         self.logger.log_info(f"Gentle Monster_{brand} : 총 {len(self.items)}개의 신상품을 발견 하였습니다.")
         for i in range(len(self.items)):

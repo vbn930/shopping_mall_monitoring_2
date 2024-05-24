@@ -151,7 +151,7 @@ class KakaoCrawler:
         data[brand] = latest_item_url
         
         with open(json_path, 'w', encoding='utf-8') as file:
-            json.dump(data, file, indent="\t")
+            json.dump(data, file, indent="\t", ensure_ascii=False)
     
     def find_items_in_list(self, driver_obj: web_driver_manager.Driver, url, latest_item_url):
         items = []
