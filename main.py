@@ -9,7 +9,7 @@ import datetime
 import json
 import time
 
-# pyinstaller -n "KAKAO_SSF_GENTLEMONSTER_MONITORING_PROGRAM_1.1" --clean --onefile main.py
+# pyinstaller -n "KAKAO_SSF_GENTLEMONSTER_MONITORING_PROGRAM_1.2" --clean --onefile main.py
 
 def get_initial_setting_from_config(logger: log_manager.Logger):
     with open(".\config\kakao\kakao_config.json") as file:

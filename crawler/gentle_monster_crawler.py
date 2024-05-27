@@ -159,6 +159,8 @@ class GentleMonsterCrawler:
                 item_details = product_element.find_element(By.CLASS_NAME, "product__link")
                 name = item_details.get_attribute("product-name")
                 item_url = item_details.get_attribute("href")
+                self.logger.log_info(f"Latest itme : {latest_item_url}")
+                self.logger.log_info(f"Current item : {name}")
                 if latest_item_url == name:
                     driver.minimize_window()
                     return items

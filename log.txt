@@ -1,41 +1,43 @@
-[2024-05-24 15:51:52][INFO]다음 정보 신상품 정보 수집까지 0.5분 대기합니다.
-[2024-05-24 15:52:25][DEBUG]Driver created without proxy
-[2024-05-24 15:52:25][INFO]카카오 선물하기 크롤링을 시작합니다!
-[2024-05-24 15:52:25][INFO]카카오 선물하기의 Fan 브랜드 크롤링을 시작합니다!
-[2024-05-24 15:52:26][DEBUG]Get *https://gift.kakao.com/brand/17319* page
-[2024-05-24 15:52:32][INFO]브랜드 Fan의 상품이 존재하지 않습니다.
-[2024-05-24 15:52:32][INFO]SSF 크롤링을 시작합니다!
-[2024-05-24 15:52:32][INFO]SSF의 shoes 브랜드 크롤링을 시작합니다!
-[2024-05-24 15:52:34][DEBUG]Get *https://www.ssfshop.com/10-Corso-Como/SHOES/list?dspCtgryNo=SFMA42A23&brandShopNo=BDMA23&brndShopId=CCPB* page
-[2024-05-24 15:52:34][DEBUG]SSF : Total 2 of pages 
-[2024-05-24 15:52:35][DEBUG]Get *https://www.ssfshop.com/10-Corso-Como/SHOES/list?dspCtgryNo=SFMA42A23&brandShopNo=BDMA23&brndShopId=CCPB&currentPage=1* page
-[2024-05-24 15:52:35][INFO]SSF_shoes: 총 0개의 신상품을 발견 하였습니다.
-[2024-05-24 15:52:35][INFO]SFF_shoes : 총 1개의 재고 확인 상품을 발견 하였습니다.
-[2024-05-24 15:52:42][INFO]재고 확인 상품 (Men) Toga × Suicoke Tono - Black의 정보 변경 사항이 없습니다.
-[2024-05-24 15:52:42][DEBUG]shoes 재입고 알림 제품 업데이트 완료.
-[2024-05-24 15:52:42][INFO]SSF의 shirts 브랜드 크롤링을 시작합니다!
-[2024-05-24 15:52:43][DEBUG]Get *https://www.ssfshop.com/10-Corso-Como/ssfshop/list?dspCtgryNo=SFMA42A20A01&brandShopNo=BDMA23&brndShopId=CCPB* page
-[2024-05-24 15:52:44][DEBUG]SSF : Total 1 of pages 
-[2024-05-24 15:52:44][DEBUG]Get *https://www.ssfshop.com/10-Corso-Como/ssfshop/list?dspCtgryNo=SFMA42A20A01&brandShopNo=BDMA23&brndShopId=CCPB&currentPage=1* page
-[2024-05-24 15:52:45][INFO]SSF_shirts: 총 0개의 신상품을 발견 하였습니다.
-[2024-05-24 15:52:45][INFO]SFF_shirts : 총 0개의 재고 확인 상품을 발견 하였습니다.
-[2024-05-24 15:52:45][DEBUG]shirts 재입고 알림 제품 업데이트 완료.
-[2024-05-24 15:52:45][INFO]Gentle Monster 크롤링을 시작합니다!
-[2024-05-24 15:52:45][INFO]Gentle Monster의 collaboration 브랜드 크롤링을 시작합니다!
-[2024-05-24 15:52:50][DEBUG]Get *https://www.gentlemonster.com/kr/shop/list/collaborations/view-all?order=newest* page
-[2024-05-24 15:52:56][INFO]Gentle Monster_collaboration : 총 0개의 신상품을 발견 하였습니다.
-[2024-05-24 15:52:56][INFO]Gentle Monster_collaboration : 총 1개의 재고 확인 상품을 발견 하였습니다.
-[2024-05-24 15:53:01][DEBUG]Get *https://www.gentlemonster.com/kr/shop/item/fishtail01/FBJ6L5N7L44T* page
-[2024-05-24 15:53:06][INFO]재고 확인 상품 제니 - 피쉬 테일 01의 정보 변경 사항이 없습니다.
-[2024-05-24 15:53:06][DEBUG]collaboration 재입고 알림 제품 업데이트 완료.
-[2024-05-24 15:53:06][INFO]Gentle Monster의 HBA 브랜드 크롤링을 시작합니다!
-[2024-05-24 15:53:09][DEBUG]Get *https://www.gentlemonster.com/kr/shop/list/collaborations/hba?order=newest* page
-[2024-05-24 15:53:19][INFO]Gentle Monster_HBA : 총 0개의 신상품을 발견 하였습니다.
-[2024-05-24 15:53:19][INFO]Gentle Monster_HBA : 총 0개의 재고 확인 상품을 발견 하였습니다.
-[2024-05-24 15:53:19][DEBUG]HBA 재입고 알림 제품 업데이트 완료.
-[2024-05-24 15:53:19][DEBUG]Driver deleted
-[2024-05-24 15:53:20][INFO]프로세스 정보 
+[2024-05-27 15:28:09][INFO]다음 정보 신상품 정보 수집까지 0.5분 대기합니다.
+[2024-05-27 15:28:41][DEBUG]Driver created without proxy
+[2024-05-27 15:28:41][INFO]카카오 선물하기 크롤링을 시작합니다!
+[2024-05-27 15:28:41][INFO]카카오 선물하기의 Fan 브랜드 크롤링을 시작합니다!
+[2024-05-27 15:28:41][DEBUG]Get *https://gift.kakao.com/brand/17319* page
+[2024-05-27 15:28:46][INFO]브랜드 Fan의 상품이 존재하지 않습니다.
+[2024-05-27 15:28:46][INFO]SSF 크롤링을 시작합니다!
+[2024-05-27 15:28:46][INFO]SSF의 shoes 브랜드 크롤링을 시작합니다!
+[2024-05-27 15:28:47][DEBUG]Get *https://www.ssfshop.com/10-Corso-Como/SHOES/list?dspCtgryNo=SFMA42A23&brandShopNo=BDMA23&brndShopId=CCPB* page
+[2024-05-27 15:28:47][DEBUG]SSF : Total 2 of pages 
+[2024-05-27 15:28:47][DEBUG]Get *https://www.ssfshop.com/10-Corso-Como/SHOES/list?dspCtgryNo=SFMA42A23&brandShopNo=BDMA23&brndShopId=CCPB&currentPage=1* page
+[2024-05-27 15:28:47][INFO]SSF_shoes: 총 0개의 신상품을 발견 하였습니다.
+[2024-05-27 15:28:47][INFO]SFF_shoes : 총 1개의 재고 확인 상품을 발견 하였습니다.
+[2024-05-27 15:28:53][INFO]재고 확인 상품 (Men) Toga × Suicoke Tono - Black의 정보 변경 사항이 없습니다.
+[2024-05-27 15:28:53][DEBUG]shoes 재입고 알림 제품 업데이트 완료.
+[2024-05-27 15:28:53][INFO]SSF의 shirts 브랜드 크롤링을 시작합니다!
+[2024-05-27 15:28:53][DEBUG]Get *https://www.ssfshop.com/10-Corso-Como/ssfshop/list?dspCtgryNo=SFMA42A20A01&brandShopNo=BDMA23&brndShopId=CCPB* page
+[2024-05-27 15:28:53][DEBUG]SSF : Total 1 of pages 
+[2024-05-27 15:28:54][DEBUG]Get *https://www.ssfshop.com/10-Corso-Como/ssfshop/list?dspCtgryNo=SFMA42A20A01&brandShopNo=BDMA23&brndShopId=CCPB&currentPage=1* page
+[2024-05-27 15:28:54][INFO]SSF_shirts: 총 0개의 신상품을 발견 하였습니다.
+[2024-05-27 15:28:54][INFO]SFF_shirts : 총 0개의 재고 확인 상품을 발견 하였습니다.
+[2024-05-27 15:28:54][DEBUG]shirts 재입고 알림 제품 업데이트 완료.
+[2024-05-27 15:28:54][INFO]Gentle Monster 크롤링을 시작합니다!
+[2024-05-27 15:28:54][INFO]Gentle Monster의 collaboration 브랜드 크롤링을 시작합니다!
+[2024-05-27 15:28:59][DEBUG]Get *https://www.gentlemonster.com/kr/shop/list/collaborations/view-all?order=newest* page
+[2024-05-27 15:29:04][DEBUG]Latest itme : 제니 - 피쉬 테일 01
+[2024-05-27 15:29:04][DEBUG]Current item : 제니 - 피쉬 테일 01
+[2024-05-27 15:29:04][INFO]Gentle Monster_collaboration : 총 0개의 신상품을 발견 하였습니다.
+[2024-05-27 15:29:04][INFO]Gentle Monster_collaboration : 총 1개의 재고 확인 상품을 발견 하였습니다.
+[2024-05-27 15:29:10][DEBUG]Get *https://www.gentlemonster.com/kr/shop/item/fishtail01/FBJ6L5N7L44T* page
+[2024-05-27 15:29:15][INFO]재고 확인 상품 제니 - 피쉬 테일 01의 정보 변경 사항이 없습니다.
+[2024-05-27 15:29:15][DEBUG]collaboration 재입고 알림 제품 업데이트 완료.
+[2024-05-27 15:29:15][INFO]Gentle Monster의 HBA 브랜드 크롤링을 시작합니다!
+[2024-05-27 15:29:17][DEBUG]Get *https://www.gentlemonster.com/kr/shop/list/collaborations/hba?order=newest* page
+[2024-05-27 15:29:42][INFO]Gentle Monster_HBA : 총 0개의 신상품을 발견 하였습니다.
+[2024-05-27 15:29:42][INFO]Gentle Monster_HBA : 총 0개의 재고 확인 상품을 발견 하였습니다.
+[2024-05-27 15:29:42][DEBUG]HBA 재입고 알림 제품 업데이트 완료.
+[2024-05-27 15:29:42][DEBUG]Driver deleted
+[2024-05-27 15:29:42][INFO]프로세스 정보 
 이름 : python.exe 
-PID : 10508 
+PID : 17012 
 현재 시스템 리소스 사용량 
-RAM : 0.531%
+RAM : 0.456%
