@@ -1,4 +1,4 @@
-# E-Commerce Product & Restock Monitor
+# Distributed Product & Restock System Health Monitor
 
 `Python` `Selenium` `Distributed-Systems` `Networking` `Web-Scraping`
 
