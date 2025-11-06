@@ -45,9 +45,7 @@ This system follows a distributed structure where multiple services communicate 
 
 -----
 
-## 3\. "Distributed Systems & Networking" Highlights
-
-This project demonstrates core competencies in distributed systems and networking:
+## 3\. Highlights
 
 ### 1. Network Communication & Proxy Management
 
